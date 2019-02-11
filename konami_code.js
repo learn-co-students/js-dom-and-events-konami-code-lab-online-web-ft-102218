@@ -8,14 +8,15 @@ function init() {
 
 document.addEventListener('keydown', (e) => {
   const key = parseInt(e.detail || e.which);
-  console.log(key);
+
   if (key === code[index]) {
     index++;
-    console.log(`index is now ${index}`);
+
     if (index === code.length) {
       alert('You got it');
       index = 0;
     }
+
   } else {
     index = 0;
   }
